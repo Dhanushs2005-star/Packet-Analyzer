@@ -1,0 +1,46 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.dist-info/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Build / distribution
+build/
+dist/
+*.whl
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS artefacts
+Thumbs.db
+.DS_Store
+
+# Binary / compiled files
+*.exe
+*.dll
+*.obj
+*.o
+*.a
+*.so
+*.lib
+
+# Test / coverage data
+htmlcov/
+.coverage
+.coverage.*
+*.cover
+*.log

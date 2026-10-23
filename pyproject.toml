@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packet_analyzer"
+version = "1.0.0"
+description = "High-fidelity Python implementation of the Deep Packet Inspection (DPI) System"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "scapy>=2.5.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+packet-analyzer = "packet_analyzer.cli:run_packet_analyzer"
+dpi-engine = "packet_analyzer.cli:run_dpi_engine"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
